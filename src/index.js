@@ -4,8 +4,8 @@ const app     = express()
 
 console.log(process.env.PORT)
 app.get('/', (req, res) => {
-    res.send('Group 11 \n' +
-        'Website Project \n\n' +
+    res.send('Group 11 ' +
+        'Website Project ' +
         'this is Home Test Page')
 })
 
