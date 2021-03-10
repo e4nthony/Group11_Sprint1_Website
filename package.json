@@ -1,0 +1,28 @@
+{
+  "name": "group11_sprint1_website",
+  "version": "1.0.0",
+  "description": "initiation",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.3.3"
+  },
+  "devDependencies": {
+    "mocha": "^8.3.1"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "mocha tests/*.spec.js --color",
+    "lint": "eslint src/*.js --color",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e4nthony/Group11_Sprint1_Website.git"
+  },
+  "author": "Anthony E. , Alon Ben, Anna Pupko, Alina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e4nthony/Group11_Sprint1_Website/issues"
+  },
+  "homepage": "https://github.com/e4nthony/Group11_Sprint1_Website#readme"
+}
