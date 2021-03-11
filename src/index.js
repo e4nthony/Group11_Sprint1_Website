@@ -18,7 +18,7 @@ app.get('/site_map', (req, res) => {
 })
 
 
-app.listen(port, ()=>{
+app.listen(port, () => {
     console.log(`server is up and running at: http://127.0.0.1:${port}`)
     console.log(`http://127.0.0.1:${port}/`)
 })
