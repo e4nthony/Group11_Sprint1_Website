@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
   "scripts": {
     "dev": "nodemon src/index.js",
     "test": "mocha tests/*.spec.js --color",
     "lint": "eslint src/*.js --color",
     "start": "node src/index.js"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/e4nthony/Group11_Sprint1_Website.git"
@@ -21,7 +19,6 @@
     "url": "https://github.com/e4nthony/Group11_Sprint1_Website/issues"
   },
   "homepage": "https://github.com/e4nthony/Group11_Sprint1_Website#readme",
-
   "devDependencies": {
     "@types/chai": "^4.2.15",
     "@types/mocha": "^8.2.1",
@@ -31,7 +28,7 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "express": "^4.17.1"
   }
-
 }
