@@ -38,9 +38,23 @@ console.log(process.env.PORT)
 // })
 
 app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/assets/healthcare.html')
+})
+
+app.get('/healthcare.html', function (req, res) {
     // res.sendFile(__dirname + '/home.html')
     // res.sendFile(__dirname + '/sample1.html')
-    res.sendFile(__dirname + '/assets/Resi/index.html')
+    res.sendFile(__dirname + '/assets/healthcare.html')
+})
+
+app.get('/login.html', function (req, res) {
+    res.sendFile(__dirname + '/assets/login.html')
+})
+app.get('/Registration.html', function (req, res) {
+    res.sendFile(__dirname + '/assets/Registration.html')
+})
+app.get('/save.html', function (req, res) {
+    res.sendFile(__dirname + '/assets/save.html')
 })
 
 
