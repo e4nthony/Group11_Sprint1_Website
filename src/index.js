@@ -40,7 +40,7 @@ console.log(process.env.PORT)
 app.get('/', function (req, res) {
     // res.sendFile(__dirname + '/home.html')
     // res.sendFile(__dirname + '/sample1.html')
-    res.sendFile(__dirname + '/assets/Medilab/index.html')
+    res.sendFile(__dirname + '/assets/Resi/index.html')
 })
 
 
