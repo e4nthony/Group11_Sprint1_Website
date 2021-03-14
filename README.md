@@ -17,6 +17,6 @@ Heroku :
 - eslint" : ^7.21.0
 - nodemon" : ^2.0.7
     
-## Project Run :
-node src/index.js
+## Run Project :
+run file : "src/index.js"
 
