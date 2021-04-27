@@ -13,9 +13,6 @@
         "indent": "off",
         "linebreak-style": "off",
         "quotes": "off",
-        "semi": [
-            "error",
-            "never"
-        ]
+        "semi": "off"
     }
 }
