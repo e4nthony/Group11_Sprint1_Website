@@ -13,17 +13,18 @@ app.use(express.static(path.join(__dirname, 'Public')))
 app.set('view engine', 'html')
 
 
-
+// Landing Page | Home
 app.get('/', function (req, res) {
     res.status(200).render('index')
 })
 
 app.get('/profile', (req, res) => {
+        //todo: view different pages to doctor and to simple user
     res.send('this is Profile page')
 })
 
-app.get('/profile', (req, res) => {
-    res.status(200).render('index')
+app.get('/about_doctor', (req, res) => {
+    res.status(200).render('about_doctor_page')
 })
 
 
