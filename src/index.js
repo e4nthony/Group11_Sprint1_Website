@@ -22,6 +22,11 @@ app.get('/profile', (req, res) => {
     res.send('this is Profile page')
 })
 
+app.get('/profile', (req, res) => {
+    res.status(200).render('index')
+})
+
+
 app.get('/site_map', (req, res) => {
     res.send('this is Site Map page')
 })
