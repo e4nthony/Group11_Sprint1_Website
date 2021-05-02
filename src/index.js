@@ -31,25 +31,21 @@ app.set('view engine', 'html')
 app.get('/', function (req, res) {
     res.status(200).render('index')
 })
+
+// Login/Registration Page | Sign in/up
 app.get('/login', (req, res) => {
-    res.send('this is login/register page ( sign in / sign up)')
+    res.send('this is login/register page ')
 })
 
+// Simple/Doctor user page | private profile page
 app.get('/profile', (req, res) => {
         //todo: view different pages to doctor and to simple user
     res.send('this is Profile page')
 })
 
+// Doctor's public profile page | about_doctor_page
 app.get('/about_doctor', (req, res) => {
     res.status(200).render('about_doctor_page')
-})
-
-app.get('/site_map', (req, res) => {
-    res.send('this is Site Map page')
-})
-
-app.get('/login', (req, res) => {
-    res.send('this is login page')
 })
 
 
