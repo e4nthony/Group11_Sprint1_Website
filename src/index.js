@@ -24,33 +24,33 @@ app.set('view engine', 'html')
 //     client.close();
 // });
 
-const {MongoClient} = require('mongodb');
+const {MongoClient} = require('mongodb')
 
 async function listDatabases(client){
-    databasesList = await client.db().admin().listDatabases();
+    let databasesList = await client.db().admin().listDatabases()
 
-    console.log("Databases:");
-    databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+    console.log("Databases:")
+    databasesList.databases.forEach(db => console.log(` - ${db.name}`))
 }
 
 async function main() {
-    const uri = "mongodb+srv://Client:2mCrSY7jqpAojJ1K@Cluster0.iv839.mongodb.net/sample_DB?retryWrites=true&w=majority";
-    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    const uri = "mongodb+srv://Client:2mCrSY7jqpAojJ1K@Cluster0.iv839.mongodb.net/sample_DB?retryWrites=true&w=majority"
+    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
     try {
-        await client.connect();
+        await client.connect()
 
-        await listDatabases(client);
+        await listDatabases(client)
 
     } catch (e) {
-        console.error(e);
+        console.error(e)
     }
     finally {
-        await client.close();
+        await client.close()
     }
 }
 
-main().catch(console.error);
+main().catch(console.error)
 
 //----------- Redirections -----------
 
