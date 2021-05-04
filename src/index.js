@@ -70,12 +70,6 @@ app.get('/doclogin', (req, res) => {
     res.status(200).render('doclogin')
 })
 
-// // Simple/Doctor user page | private profile page
-// app.get('/profile', (req, res) => {
-//
-//     res.send('this is Profile page')
-// })
-//
 // Doctor's public profile page | about_doctor_page
 app.get('/about_doctor', (req, res) => {
     res.status(200).render('about_doctor_page')
@@ -94,6 +88,12 @@ app.get('/search', (req, res) => {
 
 //todo: view different pages to doctor and to simple user by same link,
 //todo: for each user pages displays different depending on user id
+
+// // Simple/Doctor user page | private profile page
+// app.get('/profile', (req, res) => {
+//
+//     res.send('this is Profile page')
+// })
 
 // Simple_user_page | private profile page
 app.get('/profile_s', (req, res) => {
