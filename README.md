@@ -3,8 +3,13 @@
 Heroku :  
 - https://group11-website.herokuapp.com/  
 
+## Info :
+A website for managing a health system that allows communication between patient and doctor, receiving information about the doctor, making appointments, personal information.
+
+
 ## Requirements :
 - Node.js
+- MongoDB 
  
 ## Dependencies :
 - express : ^4.17.1
