@@ -86,9 +86,18 @@ app.get('/inner-page', (req, res) => {
     res.status(200).render('inner-page')
 })
 
+// Search | Search results
 app.get('/search', (req, res) => {
     res.status(200).render('search')
 })
+
+// Simple_user_page | private profile page
+app.get('/profile_s', (req, res) => {
+    res.status(200).render('inner-page')
+})
+
+
+
 
 
 app.listen(port, () => {
