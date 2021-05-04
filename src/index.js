@@ -96,7 +96,10 @@ app.get('/profile_s', (req, res) => {
     res.status(200).render('inner-page')
 })
 
-
+// Doctor_user_page | private profile page
+app.get('/profile_d', (req, res) => {
+    res.status(200).render('search')
+})
 
 
 
