@@ -93,12 +93,12 @@ app.get('/search', (req, res) => {
 
 // Simple_user_page | private profile page
 app.get('/profile_s', (req, res) => {
-    res.status(200).render('inner-page')
+    res.status(200).render('simple_user_page')
 })
 
 // Doctor_user_page | private profile page
 app.get('/profile_d', (req, res) => {
-    res.status(200).render('search')
+    res.status(200).render('doctor_user_page')
 })
 
 
