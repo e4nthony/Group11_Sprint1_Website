@@ -67,7 +67,7 @@ app.get('/login', (req, res) => {
 // Login/Registration Page | Sign in/up-doctor
 
 app.get('/doclogin', (req, res) => {
-    res.status(200).render('doc-login')
+    res.status(200).render('doclogin')
 })
 
 // Simple/Doctor user page | private profile page
