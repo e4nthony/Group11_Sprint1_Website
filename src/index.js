@@ -64,22 +64,22 @@ app.get('/login', (req, res) => {
     // res.send('this is login page')
     res.status(200).render('login')
 })
-// Login/Registration Page | Sign in/up-doctor
 
+// Login/Registration Page | Sign in/up-doctor
 app.get('/doclogin', (req, res) => {
     res.status(200).render('doclogin')
 })
 
 // // Simple/Doctor user page | private profile page
 // app.get('/profile', (req, res) => {
-//     //todo: view different pages to doctor and to simple user
+//
 //     res.send('this is Profile page')
 // })
 //
-// // Doctor's public profile page | about_doctor_page
-// app.get('/about_doctor', (req, res) => {
-//     res.status(200).render('about_doctor_page')
-// })
+// Doctor's public profile page | about_doctor_page
+app.get('/about_doctor', (req, res) => {
+    res.status(200).render('about_doctor_page')
+})
 
 // Template Page |
 app.get('/inner-page', (req, res) => {
@@ -90,6 +90,10 @@ app.get('/inner-page', (req, res) => {
 app.get('/search', (req, res) => {
     res.status(200).render('search')
 })
+
+
+//todo: view different pages to doctor and to simple user by same link,
+//todo: for each user pages displays different depending on user id
 
 // Simple_user_page | private profile page
 app.get('/profile_s', (req, res) => {
