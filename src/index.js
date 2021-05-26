@@ -49,6 +49,18 @@ async function main() {
         await client.close()
     }
 }
+app.get('/login', function (req, res) {
+    const { role } = req.user
+    if (role == -1 || role == undefined) {
+        return res.status(200).render('login')
+    }
+    alert('You are already logged in')
+    return res.redirect('/')
+})
+app.post('/', function (req, res) {
+    res.send('Got a POST request')
+})
+
 
 main().catch(console.error)
 
