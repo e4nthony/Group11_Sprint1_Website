@@ -104,7 +104,7 @@
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
 
-    <a href="appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Make an appointment</a>
+    <a href="appointment.html" class="appointment-btn scrollto"><span class="d-none d-md-inline"> </span> Appointment</a>
 
   </div>
 </header><!-- End Header -->
@@ -130,9 +130,7 @@
   <section class="inner-page">
 
     <div class="container">
-      <p>
-        Search for service
-      </p>
+
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <style>
@@ -175,79 +173,65 @@
           display: table;
         }
       </style>
-      </head>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-      <script>
-        $(document).ready(function(){
-          $("#myInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#myTable tr").filter(function() {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
-          });
-        });
-      </script>
-      <style>
-        table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
+      <!-- ======= Appointment Section ======= -->
+      <section id="appointment" class="appointment section-bg">
+        <div class="container" data-aos="fade-up">
 
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
-        }
+          <div class="section-title">
+            <h2>Make an Appointment</h2>
+          </div>
 
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
-      </style>
-      </head>
-      <body>
+          <form action="../Public/forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <div class="row">
+              <div class="col-md-4 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 form-group mt-3">
+                <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required>
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <select name="department" id="department" class="form-select">
+                  <option value="">Select Department</option>
+                  <option value="Chief Medical">Chief Medical</option>
+                  <option value="Anesthesiologist">Anesthesiologist</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Neurosurgeon">Neurosurgeon</option>
+                </select>
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <select name="doctor" id="doctor" class="form-select">
+                  <option value="">Select Doctor</option>
+                  <option value="Walter White">Walter White</option>
+                  <option value="Sarah Jhonson">Sarah Jhonson</option>
+                  <option value="William Anderson">William Anderson</option>
+                  <option value="Amanda Jepson">Amanda Jepson</option>
 
-      <input id="myInput" type="text" placeholder="Search..">
-      <br><br>
+                </select>
+              </div>
+            </div>
 
-      <table>
-        <thead>
-        <tr>
-          <th>Name of the doctor</th>
-          <th>specialty</th>
-          <th>Details Page</th>
-        </tr>
-        </thead>
-        <tbody id="myTable">
-        <tr>
-          <td>Walter White</td>
-          <td>Chief Medical Officer</td>
-          <td>  <a href="/about_doctor"><i class="bi bi-menu-button-wide-fill"></i></a></td>
-        </tr>
-        <tr>
-          <td>Sarah Jhonson</td>
-          <td>Anesthesiologist</td>
-          <td>  <a href="/about_doctor"><i class="bi bi-menu-button-wide-fill"></i></a>
-          </td>
-        </tr>
-        <tr>
-          <td>William Anderson</td>
-          <td>Cardiology</td>
-          <td>                <a href="/about_doctor"><i class="bi bi-menu-button-wide-fill"></i></a>
-          </td>
-        </tr>
-        <tr>
-          <td>Amanda Jepson</td>
-          <td>Neurosurgeon</td>
-          <td>                <a href="/about_doctor"><i class="bi bi-menu-button-wide-fill"></i></a>
-          </td>
-        </tr>
-        </tbody>
-      </table>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Make an Appointment</button></div>
+          </form>
 
-
-      </body>
+        </div>
+      </section><!-- End Appointment Section -->
 
 
 
