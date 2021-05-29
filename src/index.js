@@ -90,6 +90,14 @@ app.get('/search', (req, res) => {
 app.get('/appointment', (req, res) => {
     res.status(200).render('appointment')
 })
+//insurance
+app.get('/insurance', (req, res) => {
+    res.status(200).render('insurance')
+})
+//order insurance
+app.get('/orderin', (req, res) => {
+    res.status(200).render('orderin')
+})
 //todo: view different pages to doctor and to simple user by same link,
 //todo: for each user pages displays different depending on user id
 
