@@ -116,6 +116,10 @@ app.get('/profile_s', (req, res) => {
 app.get('/profile_d', (req, res) => {
     res.status(200).render('doctor_user_page')
 })
+// forgot password
+app.get('/forgot', (req, res) => {
+    res.status(200).render('forgot')
+})
 
 app.listen(port, () => {
     console.log(`server is up and running at: http://127.0.0.1:${port}`)
