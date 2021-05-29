@@ -97,7 +97,7 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
-        <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto " href="/">Home</a></li>
 
         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
       </ul>
@@ -105,6 +105,9 @@
     </nav><!-- .navbar -->
 
     <a href="appointment.html" class="appointment-btn scrollto"><span class="d-none d-md-inline"> </span> Appointment</a>
+    <a href="insurance" class="appointment-btn scrollto"><span class="d-none d-md-inline"> </span> Order insurance
+    </a>
+
 
   </div>
 </header><!-- End Header -->
@@ -216,8 +219,33 @@
                   <option value="Amanda Jepson">Amanda Jepson</option>
 
                 </select>
+
               </div>
+
             </div>
+            <label for="start">Date:</label>
+
+            <input type="date" id="start" name="trip-start"
+                   value="2018-07-22"
+                   min="2021-01-01" max="2022-12-31">
+
+            <label for="appt">Choose a time for your meeting:</label>
+
+            <input type="time" id="appt" name="appt"
+                   min="09:00" max="18:00" required>
+
+            <style>
+            label {
+            display: block;
+            font: 1rem 'Fira Sans', sans-serif;
+            }
+
+            input,
+            label {
+            margin: .4rem 0;
+            }
+            </style>
+
 
             <div class="form-group mt-3">
               <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
@@ -227,8 +255,97 @@
               <div class="error-message"></div>
               <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
             </div>
-            <div class="text-center"><button type="submit">Make an Appointment</button></div>
-          </form>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+              body {font-family: Arial, Helvetica, sans-serif;}
+
+              /* The Modal (background) */
+              .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+              }
+
+              /* Modal Content */
+              .modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+              }
+
+              /* The Close Button */
+              .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+              }
+
+              .close:hover,
+              .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+              }
+            </style>
+            </head>
+            <body>
+
+
+            <!-- Trigger/Open The Modal -->
+
+            <button id="myBtn">Send</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>has been sent successfully</p>
+              </div>
+
+            </div>
+
+            <script>
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the button that opens the modal
+              var btn = document.getElementById("myBtn");
+
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+
+              // When the user clicks the button, open the modal
+              btn.onclick = function() {
+                modal.style.display = "block";
+              }
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() {
+                modal.style.display = "none";
+              }
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+            </script>
+
+            </body>          </form>
 
 
         </div>
@@ -258,44 +375,15 @@
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
 
-        <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-          </form>
+
+
+
 
         </div>
 
