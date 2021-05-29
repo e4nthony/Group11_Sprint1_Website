@@ -228,6 +228,15 @@
                         <label for="city"><i class="fa fa-institution"></i> City</label>
                         <input type="text" id="city" name="city" placeholder="New York">
 
+                        <script>
+
+                        </script>
+
+
+
+
+
+
                         <div class="row">
                             <div class="col-50">
                                 <label for="state">State</label>
@@ -315,8 +324,39 @@
 
 
                 </label>
-                <input type="submit" value="Order" class="btn">
+                <head>
+                    <title>Send Mail</title>
+                    <script src=
+                                    "https://smtpjs.com/v3/smtp.js">
+                    </script>
+
+                    <script type="text/javascript">
+                        function sendEmail() {
+                            Email.send({
+                                Host: "smtp.gmail.com",
+                                Username: "sender@email_address.com",
+                                Password: "Enter your password",
+                                To: 'receiver@email_address.com',
+                                From: "sender@email_address.com",
+                                Subject: "Sending Email using javascript",
+                                Body: "Well that was easy!!",
+                            })
+                                .then(function (message) {
+                                    alert("mail sent successfully")
+                                });
+                        }
+                    </script>
+                </head>
+
+                <body>
+                <form method="post">
+                    <input type="button" value="Order"
+                           onclick="sendEmail()" />
+                </form>
+                </body>
+
             </form>
+
         </div>
     </div>
 
