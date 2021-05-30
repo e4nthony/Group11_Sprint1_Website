@@ -86,6 +86,20 @@ app.get('/about_doctor', (req, res) => {
     //     res.send('404 not found')
 })
 
+// Forum page |
+app.get('/forum', (req, res) => {
+
+    // let queryString = window.location.search
+    // let urlParams = new URLSearchParams(queryString)
+    // let topic_id = urlParams.get('id')
+
+    res.status(200).render('forum')
+
+    // if ( id ) { }
+    // else
+    //     res.send('404 not found')
+})
+
 // Template Page |
 app.get('/inner-page', (req, res) => {
     res.status(200).render('inner-page')
@@ -145,8 +159,8 @@ app.get('/profile_d', (req, res) => {
 })
 
 // forgot password
-app.get('/forgot', (req, res) => {
-    res.status(200).render('forgot')
+app.get('/recovery', (req, res) => {
+    res.status(200).render('recovery')
 })
 
 app.listen(port, () => {
