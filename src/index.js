@@ -12,6 +12,7 @@ app.use(express.static(path.join(__dirname, 'Public')))
 app.set('view engine', 'html')
 
 
+
 //----------- MongoDB -----------
 // const MongoClient = require('mongodb').MongoClient;
 // const uri = "mongodb+srv://dbAdmin:<password>@cluster0.iv839.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
@@ -73,7 +74,16 @@ app.get('/doclogin', (req, res) => {
 
 // Doctor's public profile page | about_doctor_page
 app.get('/about_doctor', (req, res) => {
+
+    // let queryString = window.location.search
+    // let urlParams = new URLSearchParams(queryString)
+    // let profile_id = urlParams.get('id')
+
     res.status(200).render('about_doctor_page')
+
+    // if ( id ) { }
+    // else
+    //     res.send('404 not found')
 })
 
 // Template Page |
@@ -90,22 +100,39 @@ app.get('/search', (req, res) => {
 app.get('/appointment', (req, res) => {
     res.status(200).render('appointment')
 })
-//insurance
+
+// insurance
 app.get('/insurance', (req, res) => {
     res.status(200).render('insurance')
 })
-//order insurance
+
+// order insurance
 app.get('/orderin', (req, res) => {
     res.status(200).render('orderin')
 })
+
 //todo: view different pages to doctor and to simple user by same link,
 //todo: for each user pages displays different depending on user id
 
 // // Simple/Doctor user page | private profile page
 // app.get('/profile', (req, res) => {
 //
-//     res.send('this is Profile page')
+//     let queryString = window.location.search
+//     let urlParams = new URLSearchParams(queryString)
+//
+//     let profile_type = urlParams.get('type')
+//     let profile_id = urlParams.get('id')
+//
+//     if ( profile_type == "simple") {
+//         res.status(200).render('simple_user_page')
+//     }
+//     else if ( profile_type == "doctor") {
+//         res.status(200).render('doctor_user_page')
+//     }
+//     else
+//         res.send('404 not found')
 // })
+
 
 // Simple_user_page | private profile page
 app.get('/profile_s', (req, res) => {
@@ -116,6 +143,7 @@ app.get('/profile_s', (req, res) => {
 app.get('/profile_d', (req, res) => {
     res.status(200).render('doctor_user_page')
 })
+
 // forgot password
 app.get('/forgot', (req, res) => {
     res.status(200).render('forgot')
