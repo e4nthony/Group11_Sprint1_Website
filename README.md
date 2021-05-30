@@ -24,3 +24,21 @@ A website for managing a health system that allows communication between patient
     
 ## Run Project :
 run file : "src/index.js"
+
+## Site Map :
+- Home | https://group11-website.herokuapp.com/  
+- Log-in / Register | https://group11-website.herokuapp.com/login 
+- (doctor) Log-in / Register  | https://group11-website.herokuapp.com/doclogin 
+- Recovery Pasword  | https://group11-website.herokuapp.com/recovery
+-
+- Private Profile Page of Doctor | https://group11-website.herokuapp.com/profile_d
+- Private Profile Page of Simple User | https://group11-website.herokuapp.com/profile_s
+-
+- Search Doctors | https://group11-website.herokuapp.com/search
+- Doctor's Public Info Page | https://group11-website.herokuapp.com/about_doctor
+- Make Appointment With Doctor | https://group11-website.herokuapp.com/appointment
+- Forum | https://group11-website.herokuapp.com/forum
+- 
+- Choose Insurance | https://group11-website.herokuapp.com/appointment
+- Order Insurance | https://group11-website.herokuapp.com/orderin
+
