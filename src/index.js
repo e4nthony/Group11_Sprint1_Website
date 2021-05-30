@@ -158,7 +158,7 @@ app.get('/profile_d', (req, res) => {
     res.status(200).render('doctor_user_page')
 })
 
-// forgot password
+// recovery password
 app.get('/recovery', (req, res) => {
     res.status(200).render('recovery')
 })
