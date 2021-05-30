@@ -419,6 +419,125 @@
     .activity-desk .album a:last-child{
       margin-right: 0px;
     }
+
+  /*  comments selection css */
+
+    body{
+      margin-top:20px;
+      background-color:#e9ebee;
+    }
+
+    .be-comment-block {
+      margin-bottom: 50px !important;
+      border: 1px solid #edeff2;
+      border-radius: 2px;
+      padding: 50px 70px;
+      border:1px solid #ffffff;
+    }
+
+    .comments-title {
+      font-size: 16px;
+      color: #262626;
+      margin-bottom: 15px;
+      font-family: 'Conv_helveticaneuecyr-bold';
+    }
+
+    .be-img-comment {
+      width: 60px;
+      height: 60px;
+      float: left;
+      margin-bottom: 15px;
+    }
+
+    .be-ava-comment {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .be-comment-content {
+      margin-left: 80px;
+    }
+
+    .be-comment-content span {
+      display: inline-block;
+      width: 49%;
+      margin-bottom: 15px;
+    }
+
+    .be-comment-name {
+      font-size: 13px;
+      font-family: 'Conv_helveticaneuecyr-bold';
+    }
+
+    .be-comment-content a {
+      color: #383b43;
+    }
+
+    .be-comment-content span {
+      display: inline-block;
+      width: 49%;
+      margin-bottom: 15px;
+    }
+
+    .be-comment-time {
+      text-align: right;
+    }
+
+    .be-comment-time {
+      font-size: 11px;
+      color: #b4b7c1;
+    }
+
+    .be-comment-text {
+      font-size: 13px;
+      line-height: 18px;
+      color: #7a8192;
+      display: block;
+      background: #f6f6f7;
+      border: 1px solid #edeff2;
+      padding: 15px 20px 20px 20px;
+    }
+
+    .form-group.fl_icon .icon {
+      position: absolute;
+      top: 1px;
+      left: 16px;
+      width: 48px;
+      height: 48px;
+      background: #f6f6f7;
+      color: #b5b8c2;
+      text-align: center;
+      line-height: 50px;
+      -webkit-border-top-left-radius: 2px;
+      -webkit-border-bottom-left-radius: 2px;
+      -moz-border-radius-topleft: 2px;
+      -moz-border-radius-bottomleft: 2px;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+
+    .form-group .form-input {
+      font-size: 13px;
+      line-height: 50px;
+      font-weight: 400;
+      color: #b4b7c1;
+      width: 100%;
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid #edeff2;
+      border-radius: 3px;
+    }
+
+    .form-group.fl_icon .form-input {
+      padding-left: 70px;
+    }
+
+    .form-group textarea.form-input {
+      height: 150px;
+    }
+
   </style>
 
 </head>
@@ -483,148 +602,550 @@
   </section><!-- End Breadcrumbs Section -->
 
   <section class="inner-page">
-    <div class="container">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-      <div class="container bootstrap snippets bootdey">
-        <div class="row">
-          <div class="profile-nav col-md-3">
-            <div class="panel">
-              <div class="user-heading round">
-                <a href="#">
-<!--                  <img src="" alt="">-->
-<!--                  todo: image-->
-                </a>
-                <h1>Doctor doc_name doc_lastname</h1>
-<!--                <p></p>-->
-              </div>
 
-<!--              <ul class="nav nav-pills nav-stacked">-->
-<!--                <li class="active"><a href="#"> <i class="fa fa-user"></i> Profile</a></li>-->
-<!--                <li><a href="#"> <i class="fa fa-calendar"></i> Recent Activity <span class="label label-warning pull-right r-activity">9</span></a></li>-->
-<!--                <li><a href="#"> <i class="fa fa-edit"></i> Edit profile</a></li>-->
-<!--              </ul>-->
+    <div class="container">
+
+      <div class="wrapper">
+        <div class="container">
+
+          <div class="wraper">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="bg-picture text-center">
+                  <div class="bg-picture-overlay"></div>
+                  <div class="profile-info-name">
+                    <img src="img/doctors/doctors-3.jpg" class="thumb-lg img-circle img-thumbnail" alt="profile-image" width="400" height="400">
+                    <h3 class="text-white" id="name_tittle">William Anderson</h3>
+                  </div>
+                </div>
+                <!--/ meta -->
+              </div>
             </div>
-          </div>
-          <div class="profile-info col-md-9">
-<!--            <div class="panel">-->
-<!--              <form>-->
-<!--                <textarea placeholder="Whats in your mind today?" rows="2" class="form-control input-lg p-text-area"></textarea>-->
-<!--              </form>-->
-<!--              <footer class="panel-footer">-->
-<!--                <button class="btn btn-warning pull-right">Post</button>-->
-<!--                <ul class="nav nav-pills">-->
-<!--                  <li>-->
-<!--                    <a href="#"><i class="fa fa-map-marker"></i></a>-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <a href="#"><i class="fa fa-camera"></i></a>-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <a href="#"><i class=" fa fa-film"></i></a>-->
-<!--                  </li>-->
-<!--                  <li>-->
-<!--                    <a href="#"><i class="fa fa-microphone"></i></a>-->
-<!--                  </li>-->
-<!--                </ul>-->
-<!--              </footer>-->
-<!--            </div>-->
-            <div class="panel">
-<!--              <div class="bio-graph-heading">-->
-<!--                -->
-<!--              </div>-->
-              <div class="panel-body bio-graph-info">
-<!--                <h1>Information:</h1>-->
-                <div class="row">
-                  <div class="bio-row">
-                    <p><span>City </span>: city</p>
-                  </div>
-                  <div class="bio-row">
-                    <p><span>Birthday</span>: bitthday</p>
-                  </div>
-                  <div class="bio-row">
-                    <p><span>Field of practice </span>: doc_field_of_practice</p>
-                  </div>
-                  <div class="bio-row">
-                    <p><span>Email </span>: doc_clinic_email</p>
-                  </div>
-                  <div class="bio-row">
-                    <p><span>Phone </span>: doc_clinic_phone_num </p>
-                  </div>
-                  <div class="bio-row">
-                    <p><span>Fax </span>: doc_clinic_fax_num</p>
+            <div class="row user-tabs">
+              <div class="col-lg-6 col-md-9 col-sm-9">
+
+              </div>
+              <div class="col-lg-6 col-md-3 col-sm-3 hidden-xs">
+                <div class="pull-right">
+                  <div class="dropdown">
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Poke</a></li>
+                      <li><a href="#">Private message</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Unfollow</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-<!--            todo: make links for future and past appointments-->
-            <div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="panel">
-                    <div class="panel-body">
-                      <div class="bio-chart">
-                        <div style="display:inline;width:100px;height:100px;"><canvas width="100" height="100px"></canvas><input class="knob" data-width="100" data-height="100" data-displayprevious="true" data-thickness=".2" value="35" data-fgcolor="#e06b7d" data-bgcolor="#e8e8e8" style="width: 54px; height: 33px; position: absolute; vertical-align: middle; margin-top: 33px; margin-left: -77px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 20px; line-height: normal; font-family: Arial; text-align: center; color: rgb(224, 107, 125); padding: 0px; -webkit-appearance: none; background: none;"></div>
+            <div class="row">
+              <div class="col-lg-12">
+
+                <div class="tab-content profile-tab-content">
+                  <div class="tab-pane active" id="home-2">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <!-- Personal-Information -->
+                        <div class="panel panel-default panel-fill">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Personal Information</h3>
+                          </div>
+                          <div class="panel-body">
+
+                            <div class="about-info-p">
+                              <strong>Full Name</strong>
+                              <br>
+                              <p class="text-muted">William Anderson</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Field of practice</strong>
+                              <br>
+                              <p class="text-muted">Cardiology</p>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- Personal-Information -->
+
+                        <!-- Contact-Information -->
+                        <div class="panel panel-default panel-fill">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Contact Information</h3>
+                          </div>
+                          <div class="panel-body">
+
+                            <div class="about-info-p">
+                              <strong>Email</strong>
+                              <br>
+                              <p class="text-muted" id="office_mail" >example@mail.com</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Office’ phone number</strong>
+                              <br>
+                              <p class="text-muted" id="office_phone_number" >012 345-67-89</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Email</strong>
+                              <br>
+                              <p class="text-muted">johnathandeon @moltran.com</p>
+                            </div>
+
+                            <div class="about-info-p m-b-0">
+                              <strong>Location</strong>
+                              <br>
+                              <p class="text-muted">USA</p>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- Contact-Information -->
+
+                        <!-- Languages -->
+                        <div class="panel panel-default panel-fill">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Languages</h3>
+                          </div>
+                          <div class="panel-body">
+                            <ul>
+                              <li>English</li>
+                              <li>Hebrew</li>
+                              <li>French</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- Languages -->
+
+                        <!--  Clinics I work with -->
+                        <div class="panel panel-default panel-fill">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Clinics I work with</h3>
+                          </div>
+                          <div class="panel-body">
+                            <ul>
+                              <li>Meuhedet</li>
+                              <li>Clalit</li>
+                              <li>Macabi</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- Clinics I work with -->
+
                       </div>
-                      <div class="bio-desk">
-                        <h4 class="red">TODO list</h4>
-                        <p>Date : 15 July</p>
-<!--                        <p> : 15 </p>-->
+
+                      <div class="col-md-8">
+
+                        <!-- Personal-Information -->
+                        <div class="panel panel-default panel-fill">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Biography</h3>
+                          </div>
+                          <div class="panel-body">
+
+                            <div class="about-info-p">
+                              <strong>I got my Licence at:</strong>
+                              <br>
+                              <p class="text-muted" id="licence_date" >4.2018</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong></strong>
+                              <br>
+                              <p class="text-muted" id="bio" >I'm want to work. Contact me for any question.</p>
+                            </div>
+
+
+                          </div>
+                        </div>
+                        <!-- Personal-Information -->
+
+                        <!-- Location-Information -->
+                        <div class="panel panel-default panel-fill">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Location</h3>
+                          </div>
+                          <div class="panel-body">
+
+                            <div class="about-info-p">
+                              <strong>City</strong>
+                              <br>
+                              <p class="text-muted" id="city" >Tel-Aviv</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Address</strong>
+                              <br>
+                              <p class="text-muted" id="address" >Atsmaut 11 </p>
+                            </div>
+
+<!--                            <div class="about-info-p">-->
+<!--                              <strong>Activity days and hours</strong>-->
+<!--                              <br>-->
+<!--                              <p class="text-muted" id="Sunday"   >Sunday	8am–12:30pm, 4–7pm</p>-->
+<!--                              <p class="text-muted" id="Monday"   >Monday	8am–12:30pm, 4–7pm</p>-->
+<!--                              <p class="text-muted" id="Tuesday"  >Tuesday	8am–1pm</p>-->
+<!--                              <p class="text-muted" id="Wednesda" >Wednesday	8am–12:30pm, 4–7pm</p>-->
+<!--                              <p class="text-muted" id="Thursday" >Thursday	8am–12:30pm</p>-->
+<!--                              <p class="text-muted" id="Friday"   >Friday	Closed</p>-->
+<!--                              <p class="text-muted" id="Saturday" >Saturday	Closed</p>-->
+<!--                            </div>-->
+
+                          </div>
+                        </div>
+                        <!-- Location-Information -->
+
+                        <!-- Activity days and hours-Information -->
+                        <div class="panel panel-default panel-fill">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Activity days and hours</h3>
+                          </div>
+                          <div class="panel-body">
+
+                            <div class="about-info-p">
+                              <strong>Sunday</strong>
+                              <br>
+                              <p class="text-muted" id="Sunday"   >8am–12:30pm, 4–7pm</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Monday</strong>
+                              <br>
+                              <p class="text-muted" id="Monday"   >8am–12:30pm, 4–7pm</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Tuesday</strong>
+                              <br>
+                              <p class="text-muted" id="Tuesday"  >8am–1pm</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Wednesday</strong>
+                              <br>
+                              <p class="text-muted" id="Wednesda" >8am–12:30pm, 4–7pm</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Thursday</strong>
+                              <br>
+                              <p class="text-muted" id="Thursday" >8am–12:30pm</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Friday</strong>
+                              <br>
+                              <p class="text-muted" id="Friday"   >Closed</p>
+                            </div>
+
+                            <div class="about-info-p">
+                              <strong>Saturday</strong>
+                              <br>
+                              <p class="text-muted" id="Saturday" >Closed</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Activity days and hours-Information -->
+
                       </div>
+
                     </div>
                   </div>
-                </div>
-<!--                <div class="col-md-6">-->
-<!--                  <div class="panel">-->
-<!--                    <div class="panel-body">-->
-<!--                      <div class="bio-chart">-->
-<!--                        <div style="display:inline;width:100px;height:100px;"><canvas width="100" height="100px"></canvas><input class="knob" data-width="100" data-height="100" data-displayprevious="true" data-thickness=".2" value="63" data-fgcolor="#4CC5CD" data-bgcolor="#e8e8e8" style="width: 54px; height: 33px; position: absolute; vertical-align: middle; margin-top: 33px; margin-left: -77px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 20px; line-height: normal; font-family: Arial; text-align: center; color: rgb(76, 197, 205); padding: 0px; -webkit-appearance: none; background: none;"></div>-->
-<!--                      </div>-->
-<!--                      <div class="bio-desk">-->
-<!--                        <h4 class="terques">ThemeForest CMS </h4>-->
-<!--                        <p>Started : 15 July</p>-->
-<!--                        <p>Deadline : 15 August</p>-->
+
+<!--                  <div class="tab-pane" id="profile-2">-->
+<!--                    &lt;!&ndash; Personal-Information &ndash;&gt;-->
+<!--                    <div class="panel panel-default panel-fill">-->
+
+<!--                      <div class="panel-body">-->
+<!--                        <div class="timeline-2">-->
+<!--                          <div class="time-item">-->
+<!--                            <div class="item-info">-->
+<!--                              <div class="text-muted">5 minutes ago</div>-->
+<!--                              <p><strong><a href="#" class="text-info">John Doe</a></strong> Uploaded a photo <strong>"DSC000586.jpg"</strong></p>-->
+<!--                            </div>-->
+<!--                          </div>-->
+
+<!--                          <div class="time-item">-->
+<!--                            <div class="item-info">-->
+<!--                              <div class="text-muted">30 minutes ago</div>-->
+<!--                              <p><a href="" class="text-info">Lorem</a> commented your post.</p>-->
+<!--                              <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>-->
+<!--                            </div>-->
+<!--                          </div>-->
+
+<!--                          <div class="time-item">-->
+<!--                            <div class="item-info">-->
+<!--                              <div class="text-muted">59 minutes ago</div>-->
+<!--                              <p><a href="" class="text-info">Jessi</a> attended a meeting with<a href="#" class="text-success">John Doe</a>.</p>-->
+<!--                              <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>-->
+<!--                            </div>-->
+<!--                          </div>-->
+
+<!--                          <div class="time-item">-->
+<!--                            <div class="item-info">-->
+<!--                              <div class="text-muted">5 minutes ago</div>-->
+<!--                              <p><strong><a href="#" class="text-info">John Doe</a></strong>Uploaded 2 new photos</p>-->
+<!--                            </div>-->
+<!--                          </div>-->
+
+<!--                          <div class="time-item">-->
+<!--                            <div class="item-info">-->
+<!--                              <div class="text-muted">30 minutes ago</div>-->
+<!--                              <p><a href="" class="text-info">Lorem</a> commented your post.</p>-->
+<!--                              <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>-->
+<!--                            </div>-->
+<!--                          </div>-->
+
+<!--                          <div class="time-item">-->
+<!--                            <div class="item-info">-->
+<!--                              <div class="text-muted">59 minutes ago</div>-->
+<!--                              <p><a href="" class="text-info">Jessi</a> attended a meeting with<a href="#" class="text-success">John Doe</a>.</p>-->
+<!--                              <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>-->
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                        </div>-->
+
 <!--                      </div>-->
 <!--                    </div>-->
+<!--                    &lt;!&ndash; Personal-Information &ndash;&gt;-->
 <!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-6">-->
-<!--                  <div class="panel">-->
-<!--                    <div class="panel-body">-->
-<!--                      <div class="bio-chart">-->
-<!--                        <div style="display:inline;width:100px;height:100px;"><canvas width="100" height="100px"></canvas><input class="knob" data-width="100" data-height="100" data-displayprevious="true" data-thickness=".2" value="75" data-fgcolor="#96be4b" data-bgcolor="#e8e8e8" style="width: 54px; height: 33px; position: absolute; vertical-align: middle; margin-top: 33px; margin-left: -77px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 20px; line-height: normal; font-family: Arial; text-align: center; color: rgb(150, 190, 75); padding: 0px; -webkit-appearance: none; background: none;"></div>-->
+
+<!--                  <div class="tab-pane" id="messages-2">-->
+<!--                    &lt;!&ndash; Personal-Information &ndash;&gt;-->
+<!--                    <div class="panel panel-default panel-fill">-->
+<!--                      <div class="panel-heading">-->
+<!--                        <h3 class="panel-title">My Projects</h3>-->
 <!--                      </div>-->
-<!--                      <div class="bio-desk">-->
-<!--                        <h4 class="green">VectorLab Portfolio</h4>-->
-<!--                        <p>Started : 15 July</p>-->
-<!--                        <p>Deadline : 15 August</p>-->
+<!--                      <div class="panel-body">-->
+<!--                        <div class="table-responsive">-->
+<!--                          <table class="table">-->
+<!--                            <thead>-->
+<!--                            <tr>-->
+<!--                              <th>#</th>-->
+<!--                              <th>Project Name</th>-->
+<!--                              <th>Start Date</th>-->
+<!--                              <th>Due Date</th>-->
+<!--                              <th>Status</th>-->
+<!--                              <th>Assign</th>-->
+<!--                            </tr>-->
+<!--                            </thead>-->
+<!--                            <tbody>-->
+<!--                            <tr>-->
+<!--                              <td>1</td>-->
+<!--                              <td>Moltran Admin</td>-->
+<!--                              <td>01/01/2015</td>-->
+<!--                              <td>07/05/2015</td>-->
+<!--                              <td><span class="label label-info">Work in Progress</span></td>-->
+<!--                              <td>Coderthemes</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                              <td>2</td>-->
+<!--                              <td>Moltran Frontend</td>-->
+<!--                              <td>01/01/2015</td>-->
+<!--                              <td>07/05/2015</td>-->
+<!--                              <td><span class="label label-success">Pending</span></td>-->
+<!--                              <td>Coderthemes</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                              <td>3</td>-->
+<!--                              <td>Moltran Admin</td>-->
+<!--                              <td>01/01/2015</td>-->
+<!--                              <td>07/05/2015</td>-->
+<!--                              <td><span class="label label-pink">Done</span></td>-->
+<!--                              <td>Coderthemes</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                              <td>4</td>-->
+<!--                              <td>Moltran Frontend</td>-->
+<!--                              <td>01/01/2015</td>-->
+<!--                              <td>07/05/2015</td>-->
+<!--                              <td><span class="label label-purple">Work in Progress</span></td>-->
+<!--                              <td>Coderthemes</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                              <td>5</td>-->
+<!--                              <td>Moltran Admin</td>-->
+<!--                              <td>01/01/2015</td>-->
+<!--                              <td>07/05/2015</td>-->
+<!--                              <td><span class="label label-warning">Coming soon</span></td>-->
+<!--                              <td>Coderthemes</td>-->
+<!--                            </tr>-->
+
+<!--                            </tbody>-->
+<!--                          </table>-->
+<!--                        </div>-->
+
 <!--                      </div>-->
 <!--                    </div>-->
+<!--                    &lt;!&ndash; Personal-Information &ndash;&gt;-->
 <!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-6">-->
-<!--                  <div class="panel">-->
-<!--                    <div class="panel-body">-->
-<!--                      <div class="bio-chart">-->
-<!--                        <div style="display:inline;width:100px;height:100px;"><canvas width="100" height="100px"></canvas><input class="knob" data-width="100" data-height="100" data-displayprevious="true" data-thickness=".2" value="50" data-fgcolor="#cba4db" data-bgcolor="#e8e8e8" style="width: 54px; height: 33px; position: absolute; vertical-align: middle; margin-top: 33px; margin-left: -77px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 20px; line-height: normal; font-family: Arial; text-align: center; color: rgb(203, 164, 219); padding: 0px; -webkit-appearance: none; background: none;"></div>-->
+
+<!--                  <div class="tab-pane" id="settings-2">-->
+<!--                    &lt;!&ndash; Personal-Information &ndash;&gt;-->
+<!--                    <div class="panel panel-default panel-fill">-->
+<!--                      <div class="panel-heading">-->
+<!--                        <h3 class="panel-title">Edit Profile</h3>-->
 <!--                      </div>-->
-<!--                      <div class="bio-desk">-->
-<!--                        <h4 class="purple">Adobe Muse Template</h4>-->
-<!--                        <p>Started : 15 July</p>-->
-<!--                        <p>Deadline : 15 August</p>-->
+<!--                      <div class="panel-body">-->
+<!--                        <form role="form">-->
+<!--                          <div class="form-group">-->
+<!--                            <label for="FullName">Full Name</label>-->
+<!--                            <input type="text" value="John Doe" id="FullName" class="form-control">-->
+<!--                          </div>-->
+<!--                          <div class="form-group">-->
+<!--                            <label for="Email">Email</label>-->
+<!--                            <input type="email" value="first.last@example.com" id="Email" class="form-control">-->
+<!--                          </div>-->
+<!--                          <div class="form-group">-->
+<!--                            <label for="Username">Username</label>-->
+<!--                            <input type="text" value="john" id="Username" class="form-control">-->
+<!--                          </div>-->
+<!--                          <div class="form-group">-->
+<!--                            <label for="Password">Password</label>-->
+<!--                            <input type="password" placeholder="6 - 15 Characters" id="Password" class="form-control">-->
+<!--                          </div>-->
+<!--                          <div class="form-group">-->
+<!--                            <label for="RePassword">Re-Password</label>-->
+<!--                            <input type="password" placeholder="6 - 15 Characters" id="RePassword" class="form-control">-->
+<!--                          </div>-->
+<!--                          <div class="form-group">-->
+<!--                            <label for="AboutMe">About Me</label>-->
+<!--                            <textarea style="height: 125px" id="AboutMe" class="form-control">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</textarea>-->
+<!--                          </div>-->
+<!--                          <button class="btn btn-primary waves-effect waves-light w-md" type="submit">Save</button>-->
+<!--                        </form>-->
+
 <!--                      </div>-->
 <!--                    </div>-->
+<!--                    &lt;!&ndash; Personal-Information &ndash;&gt;-->
 <!--                  </div>-->
+
+
+
+
+<!--                  comment selection below -->
+
+                  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+                  <div class="container">
+                    <div class="be-comment-block">
+                      <h1 class="comments-title">Comments (3)</h1>
+                      <div class="be-comment">
+                        <div class="be-img-comment">
+                          <a href="blog-detail-2.html">
+                            <img src="img/unknown_profile.jpg" alt="" class="be-ava-comment">
+                          </a>
+                        </div>
+                        <div class="be-comment-content">
+
+				<span class="be-comment-name">
+					<a href="blog-detail-2.html">David Or</a>
+					</span>
+                          <span class="be-comment-time">
+					<i class="fa fa-clock-o"></i>
+					May 21, 2018 at 3:14am
+				</span>
+
+                          <p class="be-comment-text">Good doctor.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="be-comment">
+                        <div class="be-img-comment">
+                          <a href="blog-detail-2.html">
+                            <img src="img/unknown_profile.jpg" alt="" class="be-ava-comment">
+                          </a>
+                        </div>
+                        <div class="be-comment-content">
+			<span class="be-comment-name">
+				<a href="blog-detail-2.html">Phillip</a>
+			</span>
+                          <span class="be-comment-time">
+				<i class="fa fa-clock-o"></i>
+				May 23, 2019 at 9:19am
+			</span>
+                          <p class="be-comment-text">
+                            Could be better.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="be-comment">
+                        <div class="be-img-comment">
+                          <a href="blog-detail-2.html">
+                            <img src="img/unknown_profile.jpg" alt="" class="be-ava-comment">
+                          </a>
+                        </div>
+                        <div class="be-comment-content">
+			<span class="be-comment-name">
+				<a href="blog-detail-2.html">Cüneyt ŞEN</a>
+			</span>
+                          <span class="be-comment-time">
+				<i class="fa fa-clock-o"></i>
+				May 21, 2020 at 8:54am
+			</span>
+                          <p class="be-comment-text">
+                            Thank you so much!!!
+                          </p>
+                        </div>
+                      </div>
+                      <form class="form-block">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group fl_icon">
+                              <div class="icon"><i class="fa fa-user"></i></div>
+                              <input class="form-input" type="text" placeholder="Your name">
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 fl_icon">
+                            <div class="form-group fl_icon">
+                              <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                              <input class="form-input" type="text" placeholder="Your email">
+                            </div>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="form-group">
+                              <textarea class="form-input" required="" placeholder="Your text"></textarea>
+                            </div>
+                          </div>
+                          <a class="btn btn-primary pull-right">submit</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-      <script type="text/javascript">
 
-      </script>
+            <!-- Footer -->
+            <footer class="footer text-right">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <ul class="pull-right list-inline m-b-0">
+                      <li>
+                        <p></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- End Footer -->
+
+
+
+
+
+          </div>
+          <!-- end container -->
+
+
+        </div>
+        <!-- end wrapper -->
+
+
+      </div>
 
     </div>
   </section>
